@@ -588,7 +588,7 @@
 				}
 			}
 			console.log("7 " + (count ? "CRC OK=" : "CRC Fail=") + i + " bad " + badresult);
-			
+			if (count == false) badresult = true;
 			
 			
 			if (badresult) wait = 1000;
